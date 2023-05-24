@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictor</title>
+    <link rel="stylesheet" href="predictor_child.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Julius+Sans+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header_default">
+            <div class="logo">
+                <h1>GeneDictor</h1>
+                <h4>Genetic Predictor</h4>
+            </div>
+            <nav>
+                <a href="predictor_parent.html" class="selected_nav">Predictor</a>
+                <a href="../Disease/disease.html">Disease</a>
+            </nav>
+        </div>
+        <div class="header_responsive">
+            <div class="logo_responsive">
+                <div class="menu_responsive">
+                    <div class="menu_responsive_bar"></div>
+                    <div class="menu_responsive_bar"></div>
+                    <div class="menu_responsive_bar"></div>
+                </div>
+                <div class="logo">
+                    <h1>GeneDictor</h1>
+                    <h4>Genetic Predictor</h4>
+                </div>
+            </div>
+            <!-- <div class="predictor_responsive">
+                <a href="predictor_parent.html" class="selected_nav">Predictor</a>
+            </div>
+            <div class="disease_responsive">
+                <a href="../Predictor_Child/predictor_child.html">Disease</a>
+            </div> -->
+            <a class="predictor_responsive" href="predictor_parent.html">
+                Predictor
+            </a>
+            <a class="disease_responsive" href="../Disease/disease.html">
+                Disease
+            </a>
+        </div>
+    </header>
+<!--
+    <div class="penyakit">
+        <p class="penyakit_label">Penyakit</p>
+        <div class="penyakit_selected">
+            <p class="penyakit-default">Select</p>
+            <div class="triangle"></div>
+        </div>
+        <div class="penyakit_dropdown">
+            <div class="penyakit_option">
+                <p>Hemofilia</p>
+            </div>
+            <div class="penyakit_dropdown_hr"></div>
+            <div class="penyakit_option">
+                <p>Anodontia</p>
+            </div>
+            <div class="penyakit_dropdown_hr"></div>
+            <div class="penyakit_option">
+                <p>Buta warna</p>
+            </div>
+            <div class="penyakit_dropdown_hr"></div>
+            <div class="penyakit_option">
+                <p>Thalassemia</p>
+            </div>
+            <div class="penyakit_dropdown_hr"></div>
+            <div class="penyakit_option">
+                <p>Albino</p>
+            </div>
+        </div>
+    </div>
+-->
+
+    <main>
+        <div class="switcher">
+            <a href="../Predictor_Parent/predictor_parent.html" class="switcher_left">
+                Prediksi Genetik Orangtua
+            </a>
+            <a href="../Predictor_Child/predictor_child.html" class="switcher_right">
+                Prediksi Genetik Anak
+            </a>
+        </div>
+
+
+        <form action="">
+            <img src="../Asset/predictor_child.jpg" class="form_left"/>
+            <div class="form_right">
+                <div class="penyakit">
+                    <p class="penyakit_label">Penyakit</p>
+                    <div class="penyakit_selected">
+                        <p class="penyakit-default">Select</p>
+                        <div class="triangle"></div>
+                    </div>
+                    <div class="penyakit_dropdown">
+                        <div class="penyakit_option penyakit_hemofilia">
+                            <p class="penyakit_hemofilia">Hemofilia</p>
+                        </div>
+                        <div class="penyakit_dropdown_hr"></div>
+                        <div class="penyakit_option penyakit_anodontia">
+                            <p class="penyakit_anodontia">Anodontia</p>
+                        </div>
+                        <div class="penyakit_dropdown_hr"></div>
+                        <div class="penyakit_option penyakit_buta_warna">
+                            <p class="penyakit_buta_warna">Buta warna</p>
+                        </div>
+                        <div class="penyakit_dropdown_hr"></div>
+                        <div class="penyakit_option penyakit_thalassemia">
+                            <p class="penyakit_thalassemia">Thalassemia</p>
+                        </div>
+                        <div class="penyakit_dropdown_hr"></div>
+                        <div class="penyakit_option penyakit_albino">
+                            <p class="penyakit_albino">Albino</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="genetik_suami">
+                    <p class="genetik_suami_label">Status Genetik Suami</p>
+                    <div class="genetik_suami_selected">
+                        <p class="genetik_suami-default">Select</p>
+                        <div class="triangle"></div>
+                    </div>
+                    <div class="genetik_suami_dropdown">
+                        <div class="genetik_suami_option suami_normal">
+                            <p class="suami_normal">Normal</p>
+                        </div>
+                        <div class="genetik_suami_dropdown_hr"></div>
+                        <div class="genetik_suami_option suami_penyakit">
+                            <p class="nama_penyakit_suami suami_penyakit">Buta warna</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="genetik_istri">
+                    <p class="genetik_istri_label">Status Genetik Istri</p>
+                    <div class="genetik_istri_selected">
+                        <p class="genetik_istri-default">Select</p>
+                        <div class="triangle"></div>
+                    </div>
+                    <div class="genetik_istri_dropdown">
+                        <div class="genetik_istri_option istri_normal">
+                            <p class="istri_normal">Normal</p>
+                        </div>
+                        <div class="genetik_istri_dropdown_hr"></div>
+                        <div class="genetik_istri_option istri_carrier">
+                            <p class="istri_carrier">Carrier</p>
+                        </div>
+                        <div class="genetik_istri_dropdown_hr"></div>
+                        <div class="genetik_istri_option istri_penyakit">
+                            <p class="nama_penyakit_istri istri_penyakit">Buta warna</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p id="errorMessage"></p>
+
+                <button class="predict_btn">
+                    PREDICT
+                </button>
+            </div>
+
+        </form>
+        <div class="result_box">
+            <h1>RESULT</h1>
+            <hr/>
+            <ul class="result_box_content">
+                <!--
+                <h3>ASSDASKDOPO</h3>
+                <li>AKpopsopkodfsosdf</li>-->
+            </ul>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer_default">
+            <div class="footer_logo">
+                <h1>GeneDictor</h1>
+                <h4>GeneticPredictor</h4>
+                <p>&copy; Copyright 2023 GeneDictor, All Rights Reserved</p>
+            </div>
+            <div class="footer_line"></div>
+            <div class="footer_content">
+                <div class="footer_features">
+                    <h3>Navigate</h3>
+                    <a href="../Predictor_Parent/predictor_parent.html">Predictor</a>
+                    <a href="../Disease/disease.html">Disease</a>
+                </div>
+                <div class="footer_information">
+                    <h3>Information</h3>
+                    <a>Privacy & Policy</a>
+                    <a>FAQ</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_responsive">
+            <div class="footer_responsive_logo">
+                <div class="footer_logo_forResponsive">
+                    <h1>GeneDictor</h1>
+                    <h4>GeneticPredictor</h4>
+                    <p>&copy; Copyright 2023 GeneDictor, All Rights Reserved</p>
+                </div>
+            </div>
+            <div class="footer_content_forResponsive">
+                <div class="footer_features">
+                    <h3>Navigate</h3>
+                    <a href="../Predictor_Parent/predictor_parent.html">Predictor</a>
+                    <a href="../Disease/disease.html">Disease</a>
+                </div>
+                <div class="footer_information">
+                    <h3>Information</h3>
+                    <a>Privacy & Policy</a>
+                    <a>FAQ</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_responsive_mobile">
+            <div class="footer_responsive_logo">
+                <div class="footer_logo_forResponsive">
+                    <h1>GeneDictor</h1>
+                    <h4>GeneticPredictor</h4>
+                    <p>&copy; Copyright 2023 GeneDictor, All Rights Reserved</p>
+                </div>
+            </div>            
+            <div class="footer_content_forResponsive_mobile">
+                <div class="footer_features_mobile">
+                    <h3>Navigate</h3>
+                    <a href="../Predictor_Parent/predictor_parent.html">Predictor</a>
+                    <a href="../Disease/disease.html">Disease</a>
+                </div>
+            </div>
+            <div class="footer_content_forResponsive_mobile">
+                <div class="footer_information_mobile">
+                    <h3>Information</h3>
+                    <a>Privacy & Policy</a>
+                    <a>FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="predictor_child.js"></script>
+</body>
+</html>

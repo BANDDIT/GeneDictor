@@ -1,0 +1,1014 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+body{
+    position:relative;
+    background:#F6F6F6;
+    /*
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;*/
+}
+
+
+/*
+
+HEADER PAGE
+
+*/
+/*Default Header*/
+header{
+    width:100%;
+    height:fit-content;
+}
+.header_default{
+    width:100%;
+    height:80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-left:20px;
+    padding-right:20px;
+    background-color:#173158;
+
+}
+.logo{
+    height:100%;
+    color:white;
+    width:fit-content;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+.logo h1{
+    font-weight:200;
+    font-size:30px;
+}
+.logo h4{
+    font-weight:100;
+    font-size:15px;
+}
+nav{
+    height:100%;
+    width:fit-content;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+nav a{
+    text-decoration:none;
+    margin-right:10px;
+    font-family: 'Montserrat';
+    font-style: normal;    
+    width:100px;
+    height:35px;
+    background:#173158;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:16px;
+}
+.selected_nav{
+    background:white;
+    color:#173158;
+}
+
+/*Responsive Header*/
+.header_responsive{
+    width:100%;
+    height:fit-content;
+    display:none;
+    flex-direction:column;
+
+}
+.logo_responsive{
+    width:100%;
+    height:80px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    padding-left:20px;
+    padding-right:20px;
+    background-color:#173158;
+
+}
+.menu_responsive{
+    width:60px;
+    height:40px;
+    border:0.5px solid white;
+    border-radius:8px;
+    margin-right:15px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:5px;
+    transition:1s;
+}
+.menu_responsive_bar{
+    width:40px;
+    height:4px;
+    background:white;
+    border-radius:30px;
+    margin-top:2.5px;
+    margin-bottom:2.5px;
+    transition:0.5s;
+}
+.menu_responsive:hover{
+    background:white;
+
+}
+.menu_responsive:hover .menu_responsive_bar{
+    background:#173158;
+}
+.predictor_responsive,.disease_responsive{
+    width:100%;
+    height:55px;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Montserrat';
+    font-style: normal;    
+    font-size:16px;
+    color:white;
+    transition:1s;
+    text-decoration:none;
+    background-color:#173158;
+    opacity:0;
+    pointer-events:none;
+
+}
+.predictor_responsive:hover,.disease_responsive:hover{
+    color:#173158;
+    background:white;
+}
+
+/*
+.disease_responsive{
+    width:100%;
+    height:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Montserrat';
+    font-style: normal;    
+    font-size:16px;
+    color:white;
+    transition:1s;
+}
+.predictor_responsive a, .disease_responsive a{
+    text-decoration:none;
+    margin-right:10px;
+    font-family: 'Montserrat';
+    font-style: normal;    
+    width:100px;
+    height:35px;
+    background:#173158;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:16px;
+}
+.predictor_responsive:hover a, .disease_responsive:hover a{
+    color:#173158;
+    
+}
+*/
+
+/*
+MAIN
+*/
+
+main{
+    width:100%;
+    height:fit-content;
+    margin-top:30px;
+    margin-bottom:30px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    /*
+    align-items:flex-start;
+    justify-content:center;*/
+}
+
+.switcher{
+    width:30%;
+    height:45px;
+    background:white;
+    border-radius:10px;
+    display:flex;
+}
+.switcher_right{
+    width:50%;
+    height:100%;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    background:#173158;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-decoration:none;
+}
+/*
+.switcher_right a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-decoration:none;
+}*/
+.switcher_left{
+    width:50%;
+    height:100%;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    background:white;   
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #173158;
+    text-decoration:none;
+}
+/*
+.switcher_left a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #173158;
+    text-decoration:none;
+}*/
+
+
+form{
+    width:70%;
+    height:fit-content;
+    height:600px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: #F9F9F9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    margin-top:20px;
+    overflow:hidden;
+}
+.first_row_form{
+    width:100%;
+    height:150px;
+    display:flex;
+    justify-content:space-around;
+}
+.second_row_form{
+    width:100%;
+    height:150px;
+    display:flex;
+    justify-content:space-around;
+}
+.predict_btn{
+    width:150px;
+    height:45px;
+    border-radius:15px;
+    background:#173158;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:none;
+    outline:none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+
+    font-size:18px;
+}
+.result_box{
+    margin-top:40px;
+    background:white;
+    border:4px solid #173158;
+    border-radius:20px;
+    width:45%;
+    height:400px;
+    height:fit-content;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+}
+.result_box h1{
+    font-size:40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    color:#173158; 
+}
+.result_box hr{
+    width:85%;
+    height:4px;
+    margin-top:5px;
+    margin-bottom:5px;
+    background:#173158;
+    color:#173158;
+    border-radius:30px;
+}
+.result_box_content{
+    margin-top:3px;
+    width:90%;
+    height:fit-content;
+    display:flex;
+    flex-direction:column;
+}
+.result_box_content h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #173158;
+}
+.result_box_content li{
+    margin-left:30px;
+    font-size:15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #173158;
+}
+.form_right{
+    width:50%;
+    width:40%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+.form_left{
+    width:60%;
+    height:100%;
+    /*
+    background-image:url('../Asset/predictor_child.jpg');
+    background-repeat: no-repeat;*/
+}
+
+
+
+/*
+FOOTER
+*/
+/*Footer Default*/
+footer{
+    width:100%;
+    height:fit-content;
+    background:#173158;
+}
+.footer_default{
+    height:150px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:15px;
+    padding-bottom:15px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.footer_logo{
+    height:100%;
+    width:44%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.footer_logo h1{
+    font-size:50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    color:white;
+}
+.footer_logo h4{
+    font-size:30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    color:white;
+}
+.footer_logo p{
+    font-size:15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    color:white;
+    margin-top:5px;
+}
+.footer_line{
+    height:100%;
+    width:3px;
+    background:white;
+    border-radius:20px;
+}
+.footer_content{
+    width:55%;
+    height:100%;
+    padding-left:20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+.footer_features, .footer_information{
+    height:100%;
+    width:fit-content;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    margin-left:10px;
+    margin-right:10px;
+}
+.footer_features h3, .footer_information h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom:10px;
+}
+.footer_features a, .footer_information a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-decoration:none;
+    margin-top:5px;
+}
+/*Footer Responsive*/
+.footer_responsive{
+    width:100%;
+    height:fit-content;
+    display:none;
+    flex-direction:column;
+}
+.footer_responsive_logo{
+    width:100%;
+    height:150px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.footer_logo_forResponsive{
+    height:100%;
+    width:fit-content;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;  
+}
+.footer_logo_forResponsive h1{
+    font-size:50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    color:white;
+}
+.footer_logo_forResponsive h4{
+    font-size:30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    color:white;
+}
+.footer_logo_forResponsive p{
+    font-size:15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    color:white;
+    margin-top:5px;
+}
+.footer_content_forResponsive{
+    height:150px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+/*Footer Responsive Mobile*/
+.footer_responsive_mobile{
+    width:100%;
+    height:fit-content;
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding-bottom:10px;
+
+}
+.footer_features_mobile, .footer_information_mobile{
+    height:100%;
+    width:fit-content;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-left:10px;
+    margin-right:10px;
+}
+.footer_features_mobile h3, .footer_information_mobile h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom:10px;
+}
+.footer_features_mobile a, .footer_information_mobile a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-decoration:none;
+    margin-top:5px;
+}
+.footer_content_forResponsive_mobile{
+    height:120px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+
+
+.penyakit{
+    width:fit-content;
+    height:fit-content;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    margin-left:30px;
+    margin-right:30px;
+}
+.penyakit_label{
+    font-size:11px;
+    color:#173158;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size:20px;
+}
+.penyakit_selected{
+    background:white;
+    height:50px;
+    width:300px;
+    border:0.5px solid #BBBBBB;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-left:15px;
+    padding-right:15px;
+    cursor:pointer;
+    z-index:1;
+}
+.penyakit-default{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;    
+    color: #949494;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 3.5px solid transparent;
+    border-right: 3.5px solid transparent;
+    border-bottom: 7px solid #173158;
+    margin-top:4px;
+}
+.penyakit_dropdown{
+    width:300px;
+    height:fit-content;
+    position:absolute;
+    border:0.5px solid #BBBBBB;
+    border-radius:10px;
+    overflow:hidden;
+    margin-top:75px;
+    display:none;
+    flex-direction:column;
+    pointer-events:none;
+    z-index:2;
+}
+.penyakit_dropdown_hr{
+    width:100%;
+    height:0.7px;
+    background:#BBBBBB;
+}
+.penyakit_option{
+    height:50px;
+    width:100%;
+    background:white; 
+    padding-left:20px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    cursor:pointer;
+}
+.penyakit_option p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    color: #173158;
+}
+.penyakit_option:hover{
+    background:#173158;
+}
+.penyakit_option:hover p{
+    color:white;
+}
+
+.genetik_suami{
+    width:fit-content;
+    height:fit-content;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    margin-left:30px;
+    margin-right:30px;
+}
+.genetik_suami_label{
+    font-size:11px;
+    color:#173158;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size:20px;
+}
+.genetik_suami_selected{
+    background:white;
+    height:50px;
+    width:300px;
+    border:0.5px solid #BBBBBB;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-left:15px;
+    padding-right:15px;
+    cursor:pointer;
+    z-index:1;
+}
+.genetik_suami-default{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;    
+    color: #949494;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 3.5px solid transparent;
+    border-right: 3.5px solid transparent;
+    border-bottom: 7px solid #173158;
+    margin-top:4px;
+}
+.genetik_suami_dropdown{
+    width:300px;
+    height:fit-content;
+    position:absolute;
+    border:0.5px solid #BBBBBB;
+    border-radius:10px;
+    overflow:hidden;
+    margin-top:75px;
+    display:none;
+    flex-direction:column;
+    pointer-events:none;
+    z-index:2;
+}
+.genetik_suami_dropdown_hr{
+    width:100%;
+    height:0.7px;
+    background:#BBBBBB;
+}
+.genetik_suami_option{
+    height:50px;
+    width:100%;
+    background:white; 
+    padding-left:20px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    cursor:pointer;
+}
+.genetik_suami_option p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    color: #173158;
+}
+.genetik_suami_option:hover{
+    background:#173158;
+}
+.genetik_suami_option:hover p{
+    color:white;
+}
+
+.genetik_istri{
+    width:fit-content;
+    height:fit-content;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    margin-left:30px;
+    margin-right:30px;
+}
+.genetik_istri_label{
+    font-size:11px;
+    color:#173158;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size:20px;
+}
+.genetik_istri_selected{
+    background:white;
+    height:50px;
+    width:300px;
+    border:0.5px solid #BBBBBB;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-left:15px;
+    padding-right:15px;
+    cursor:pointer;
+    z-index:1;
+}
+.genetik_istri-default{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;    
+    color: #949494;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 3.5px solid transparent;
+    border-right: 3.5px solid transparent;
+    border-bottom: 7px solid #173158;
+    margin-top:4px;
+}
+.genetik_istri_dropdown{
+    width:300px;
+    height:fit-content;
+    position:absolute;
+    border:0.5px solid #BBBBBB;
+    border-radius:10px;
+    overflow:hidden;
+    margin-top:75px;
+    display:none;
+    flex-direction:column;
+    pointer-events:none;
+    z-index:2;
+}
+.genetik_istri_dropdown_hr{
+    width:100%;
+    height:0.7px;
+    background:#BBBBBB;
+}
+.genetik_istri_option{
+    height:50px;
+    width:100%;
+    background:white; 
+    padding-left:20px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    cursor:pointer;
+}
+.genetik_istri_option p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    color: #173158;
+}
+.genetik_istri_option:hover{
+    background:#173158;
+}
+.genetik_istri_option:hover p{
+    color:white;
+}
+#errorMessage{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    color: #173158;
+    margin-top:-30px;
+    margin-bottom:-30px;
+}
+
+@media(max-width:1180px){
+    .switcher{
+        width:40%;
+    }
+    form{
+        width:90%;
+    }
+    .result_box{
+        width:60%;
+    }
+}
+
+@media(max-width:910px){
+    .footer_default{
+        display:none;
+    }
+    .footer_responsive{
+        display: flex;
+    }
+    .footer_responsive a{
+        margin-top:7px;
+        margin-bottom:7px;
+    }
+    .switcher{
+        width:46%;
+    }   
+    .form_left{
+        width:55%;
+    }
+    .form_right{
+        width:45%;
+    }
+    .result_box{
+        width:85%;
+    }
+}
+
+@media(max-width:800px){
+    form{
+        width:85%;
+        background-position: top;
+        background-repeat:no-repeat;
+        background-color:white;
+        background-image:url('../Asset/responsive_bg2.jpg');
+    }
+    .form_left{
+        display:none;
+    }
+    #errorMessage{
+        width:200%;
+        display:flex;
+        justify-content:center;
+    }
+}
+
+@media(max-width:750px){
+    .result_box{
+        width:90%;
+    }
+    .switcher{
+        width:53%;
+    }
+}
+
+@media(max-width:650px){
+    .switcher{
+        width:60%;
+    }
+}
+
+@media(max-width:570px){
+    .switcher{
+        width:70%;
+    }
+}
+
+
+@media(max-width:510px){
+    .header_default{
+        display:none;
+    }
+    .header_responsive{
+        display:flex;
+    }
+}
+
+@media(max-width:480px){
+    .switcher{
+        width:90%;
+    }
+    #errorMessage{
+        font-size:15px;
+    }
+}
+
+@media(max-width:390px){
+    .footer_responsive{
+        display:none;
+    }
+    .footer_responsive_mobile{
+        display:flex;
+    }
+    .footer_responsive_mobile a{
+        margin-top:7px;
+        margin-bottom:7px;
+    }
+    .footer_logo_forResponsive p{
+        font-size:11px;
+    }
+    .main_right h2{
+        font-size:20px;
+    }
+    .konten_penyakit h2{
+        font-size:15px;
+        margin-top:-10px;
+ 
+    }
+    .konten_penyakit p{
+        font-size:12px;
+        margin-bottom:-15px;
+    }
+    .switcher{
+        width:95%;
+    }
+    .switcher_left {
+        font-size:10px;
+    }
+    .switcher_right {
+        font-size:10px;
+    }
+    .genetik_suami_selected{
+        width:250px;
+    }
+    .genetik_suami_option{
+        width:250px;
+    }
+    .genetik_suami_dropdown{
+        width:250px;
+    }
+    .genetik_istri_selected{
+        width:250px;
+    }
+    .genetik_istri_option{
+        width:250px;
+    }
+    .genetik_istri_dropdown{
+        width:250px;
+    }
+    .penyakit_selected{
+        width:250px;
+    }
+    .penyakit_option{
+        width:250px;
+    }
+    .penyakit_dropdown{
+        width:250px;
+    }   
+}
